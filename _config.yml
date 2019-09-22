@@ -1,3 +1,5 @@
 title: JIANGLi's Docs
 description: sharing my what I know here
 remote_theme: pmarsceill/just-the-docs
+
+exclude: ["README.md"]
