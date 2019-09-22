@@ -2,7 +2,7 @@
 layout: default
 title: Read Property Files Using Resource Bundle
 parent: Spring Framework
-nav_order: 2
+nav_order: 3
 ---
 
 

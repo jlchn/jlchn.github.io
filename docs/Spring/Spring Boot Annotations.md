@@ -1,9 +1,8 @@
-
 ---
 layout: default
 title: Spring Boot Annotations
 parent: Spring Framework
-nav_order: 1
+nav_order: 2
 ---
 
 ### @EnableAutoConfiguration
