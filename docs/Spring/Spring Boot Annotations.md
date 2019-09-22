@@ -1,4 +1,11 @@
 
+---
+layout: default
+title: Buttons
+parent: Spring Framework
+nav_order: 1
+---
+
 ### @EnableAutoConfiguration
 
 @EnableAutoConfiguration tells Spring Boot to configure Spring based on the libaray dependencies 
