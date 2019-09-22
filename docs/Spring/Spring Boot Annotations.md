@@ -1,7 +1,7 @@
 
 ---
 layout: default
-title: Buttons
+title: Spring Boot Annotations
 parent: Spring Framework
 nav_order: 1
 ---
