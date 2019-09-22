@@ -3,3 +3,5 @@ description: sharing my what I know here
 remote_theme: pmarsceill/just-the-docs
 
 exclude: ["README.md"]
+
+ga_tracking: UA-148491937-1
