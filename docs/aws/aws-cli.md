@@ -6,13 +6,12 @@ nav_order: 1
 has_children: false
 ---
 
-# aws cli
 
-### installation
+### install aws cli
 
 https://docs.aws.amazon.com/cli/latest/userguide/installing.html
 
-### configuration
+### cli configuration
 
 ```
 aws configure
