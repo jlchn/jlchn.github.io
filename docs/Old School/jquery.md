@@ -1,3 +1,11 @@
+---
+layout: default
+title: JQuery
+parent Old School
+nav_order: 1000
+has_children: false
+---
+
 
 ## Operating Select Component
 
