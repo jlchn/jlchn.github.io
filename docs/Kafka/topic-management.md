@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Kafka Topic Management
+title: Topic Management
 parent: Kafka
 nav_order: 1
 has_children: false
@@ -128,7 +128,7 @@ kafka-topics --zookeeper zookeeper-2:22181 --describe --topic first-topic --unde
 
 after stopping one broker, we see the `ISR` has less broker Ids than `Replicas`. 
 
-Kafka doesn't help us re-arrange the lost replica to other brokers even though there are enough spaces, why? #todo
+Kafka doesn't help us re-assign the lost replica to other brokers even though there are enough spaces, check [here](./partition-management.md) to see how to do it.
 
 ## describe unavailable partitions
 
@@ -157,7 +157,7 @@ Topic:first-topic	PartitionCount:5	ReplicationFactor:2	Configs:
 	Topic: first-topic	Partition: 3	Leader: 2	Replicas: 2,3	Isr: 2,3
 	Topic: first-topic	Partition: 4	Leader: 3	Replicas: 3,2	Isr: 3,2
 ```
-attention
+**attention**
 - after changing the partition number, the messages in one partition will be arranged to other partitions, which means if you depends on key to distribute messages to different partitions, you will see unexpected behavior.
 - decreasing the partition number is not supported right now, we decreasing the number, Kafka has to care about how to deal with messages on the partitions beling deleted: Kafka has to copy these messages to other partitions, and merge the messages to the existing log files, it is a huge work.
 
