@@ -141,7 +141,7 @@ Topic:first-topic	PartitionCount:5	ReplicationFactor:2	Configs:
 
 when broker 2 is back, or when you add new brokers to the cluster, you can update the re-assign.json(change the version) file and run `kafka-reassign-partitions` to put partitions on new brokers. 
 
-# replica reassignment
+# replica re-assignment
 
 when we execute `kafka-reassign-partition`, we see partition configuration like this:
 ``` json
