@@ -1,6 +1,6 @@
 ---
 layout: default
-title: AWS CLI
+title: AWS CLI: Security Group
 parent: AWS
 nav_order: 1
 has_children: false
