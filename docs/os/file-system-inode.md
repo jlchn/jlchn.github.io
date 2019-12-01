@@ -1,6 +1,7 @@
 ---
 layout: default
 title: [File System] inode
+parent: Operating System
 nav_order: 15
 has_children: false
 ---
