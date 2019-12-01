@@ -41,5 +41,6 @@ for dir in os.listdir(root):
 
 dirs.sort()
 for dir in dirs:         
-    print(dir.title + ' ' + str(dir.order))            
+    print(dir.title + ' ' + str(dir.order))
+                
 
