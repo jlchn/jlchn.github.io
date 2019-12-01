@@ -39,7 +39,7 @@ systemd       1                   root  mem       REG                8,2    1700
   - **CHR** –> character special file
   
  
- ### 2.list all open files by a pid
+### 2.list all open files by a pid
   
   ```shell
 $ sudo lsof -p 20        
@@ -68,7 +68,7 @@ java      3050 jenkins  DEL       REG                8,2               3278891 /
 
   ```
  
- ### 4.list all open files filtered by a user name
+### 4.list all open files filtered by a user name
   
   ```shell
 $ sudo lsof -u jlchn | head -n 10
@@ -86,7 +86,7 @@ chrome     1662 jlchn  DEL       REG               0,24                   162 /d
 
   ```
   
- ### 5.list processes who opening a specific file
+### 5.list processes who opening a specific file
 You can list only the processes which opened a specific file, by providing the filename as arguments.
 
 ``` shell
@@ -98,7 +98,7 @@ dockerd 2363 root    9uW  REG    8,2   131072 5242890 /var/lib/docker/volumes/me
 
 ```
 
- ### 6.list processes who opening a specific file
+### 6.list processes who opening a specific file
 You can list only the processes which opened a specific file, by providing the filename as arguments.
 
 ``` shell
@@ -110,7 +110,7 @@ dockerd 2363 root    9uW  REG    8,2   131072 5242890 /var/lib/docker/volumes/me
 
 ```
 
- ### 7.list all processes who opening files under a specific directorys
+### 7.list all processes who opening files under a specific directorys
 
 ``` shell
 $ sudo lsof +d /var/log/
