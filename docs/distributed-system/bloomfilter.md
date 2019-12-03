@@ -50,6 +50,7 @@ hash_func_2('good') % 5 = 3
 hash_func_3('good') % 5 = 5
 ```
 after adding the frist word, the bit array is changed like the following.
+
 | 1   | 2       | 3     | 4    | 5     |
 | ---:| -------:| -----:|-----:| -----:|
 | 1   |0        | 1     | 0    | 1     |
@@ -65,6 +66,7 @@ hash_func_3('bad') % 5 = 3
 ```
 
 after adding the second word, the bit array is changed like the following.
+
 | 1   | 2       | 3     | 4    | 5     |
 | ---:| -------:| -----:|-----:| -----:|
 | 1   |1        | 1     | 0    | 1     |
