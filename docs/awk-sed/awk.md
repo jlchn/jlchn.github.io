@@ -249,7 +249,7 @@ print the array
 
 ### regex
 
-```
+``` bash
  awk '/Ma.h/ {print $0}' score-test.txt  
 1 Dell Math 97
 3 Jackson Math 78
