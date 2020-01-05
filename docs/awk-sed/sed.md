@@ -1,6 +1,6 @@
 ---
 layout: default
-title: awk
+title: sed
 parent: awk & sed
 nav_order: 2
 has_children: false
