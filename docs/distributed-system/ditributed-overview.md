@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Bloom Filter
+title: Overview
 parent: Distributed System
-nav_order: 10
+nav_order: 1
 has_children: false
 ---
 
