@@ -6,10 +6,18 @@ nav_order: 1
 has_children: false
 ---
 
+### working process
 
-It reads from stdin and writes to stdout. It's easy to pipe stuff in and out of it.
-
-Most Awk programs will start with a "{" and end with a "}". Everything in between there gets run once on each line of input.
+- process
+    - execute commands in `BEGIN` block;
+        - commands in `BEGIN` block will only be executed once;
+    - read, execute and repeat;
+        - read: read a line from the inputs;
+        - execute: most Awk programs will start with a "{" and end with a "}". everything in between there gets run once on each line of input;
+        - repeat commands on the next line in the inputs(file etc.) between "{" and "}"
+    - execute commands in `END` block;
+        - execute commands in `END` block  will only be executed once;
+    
 
 ### placeholder and delimiter
 ``` bash
