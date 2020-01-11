@@ -2,7 +2,7 @@
 layout: default
 title: quick sort
 parent: Algorithm and Data Structure
-nav_order: 998
+nav_order: 99
 has_children: false
 ---
 
