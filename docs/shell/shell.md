@@ -1,6 +1,6 @@
 ---
 layout: default
-title: shell
+title: Shell
 nav_order: 100
 has_children: false
 ---
