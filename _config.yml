@@ -1,5 +1,5 @@
-title: Day Day Up
-description: sharing what I know here
+title: Programmer's Docs
+description: The Basic Knowledges for Programers
 remote_theme: pmarsceill/just-the-docs
 
 exclude: ["README.md"]
