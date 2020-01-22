@@ -575,7 +575,30 @@ except FileNotFoundError:
     print("the file cannot be found")
 
 ```
-# network IO
+# HTTP
+
+## urllib2
+
+```python
+
+import urllib2
+import json
+import ssl
+
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
+
+def fetch(parent_id, status_id, others = ''):
+    try:
+        response = urllib2.urlopen(redmine_parent_issue_url.format(parent_id, status_id, others), context=ctx)
+        objects = json.load(response)
+    except (urllib2.HTTPError) as e: 
+        print(e)
+    response.close()
+    return objects
+
+```
 
 # object oriented programming
 
@@ -600,6 +623,27 @@ except FileNotFoundError:
 '{0} {1}'.format('good', 'boy') # good boy
 '{0:.2f} {1}'.format(12.456, 'GB') # 12.46 GB
 'No.{0}'.format(1)
+```
+
+## color format
+
+``` python
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m' 
+
+def format_bold_underline_warning_message(message):
+    print(bcolors.WARNING + bcolors.BOLD + bcolors.UNDERLINE + message + bcolors.ENDC)
+
+def format_warning_message(message):
+     print(bcolors.WARNING + message + bcolors.ENDC)
+
 ```
 
 # read from stdin
