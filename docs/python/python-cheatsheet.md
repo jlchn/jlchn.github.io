@@ -316,6 +316,18 @@ d['sex'] = 'M' # add
 d['name'] = 'my_name' # update
 print(d)
 ```
+### test if a key in a map
+
+``` python
+d = { "name": "name", "age" : 1}
+
+if 'name' in d.keys():
+    print("in")
+# or
+if 'name' in d:
+    print("in")
+
+```
 
 ### delete from map
 
